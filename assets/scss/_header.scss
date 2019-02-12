@@ -1,0 +1,96 @@
+header{
+    width: 100%;
+    background: #2a2a2a;
+    .header{
+        margin: 0 auto;
+        max-width: 1100px;
+        height: 97px;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            width: 33%;
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            font-size: 11px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            img{
+                height: 13px;
+            }
+            &:last-child{
+                 display: flex;
+                span{
+                    margin-left: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #53abe4;
+                    padding-right: 2px;
+                    height: 16px;
+                    width: 10px;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 100%;
+                        display: block;
+                        border: 8px solid transparent;
+                        border-right-color: #53abe4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px)  {
+    header{
+        position: fixed;
+        box-sizing: border-box;
+        padding: 0% 5%;
+        .header--responsive{
+            display: block;
+            height: 97px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .burger{
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 40px;
+                &__part{
+                    margin-bottom: 7px;
+                    height: 3px;
+                    width: 100%;
+                    background: white;
+                    border-radius: 40px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .header{
+            display: none;
+        }
+    }
+}    
+@media screen and (min-width: 640px){
+    .header--responsive{
+        display: none;
+    }
+    .menu--responsive{
+        display: none;
+    }
+}
+

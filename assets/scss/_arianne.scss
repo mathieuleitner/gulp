@@ -1,0 +1,28 @@
+.arianne{
+    position: fixed;
+    height: auto;
+    width: 20px;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    &__dot{
+        margin-bottom: 20px;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #2a2a2a;
+        border-radius: 40px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.highlight{
+    background: #2a2a2a;
+}
+
+@media screen and (max-width: 640px)  {
+    .arianne{
+        right: 20px;
+    }
+}

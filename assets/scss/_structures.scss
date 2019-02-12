@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+}
+
+main{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.section{
+    box-sizing: border-box;
+    width: 50%;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    .signature{
+        margin-top: 30px;
+        height: 90px;
+    }
+    img{
+        margin-bottom: 25px;
+        height: 180px;  
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        p{
+            margin-top: 30px;
+            color: #1e1e1e;
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+        }
+    }
+    &__1{
+        padding: 0;
+        display: block;
+        background: #eeead0;  
+        img{
+            margin-left: 100%;
+            margin-top: 480px;
+            transform: translate(-50%, -50%);
+            height: 140px;
+            margin-bottom: 0;
+        }
+    }
+    &__4{
+        background: url('.././img/Capa-57-copia12.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &__5{
+        background: url('.././img/grid.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &__8{
+        background: url('.././img/paint.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &__9{
+        background: url('.././img/bottle.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}  
+
+@media screen and (max-width: 640px)  {
+    .section{
+        height: 600px;
+        width: 100%;
+        &__img{
+            height: 400px;
+        }
+        &__1{
+            margin-top: 97px;
+            order: 1;
+            img{
+                display: none;
+            }
+        }
+        &__2{
+            order: 2;
+        }
+        &__3{
+            order: 4;
+        }
+        &__4{
+            order: 3;
+        }
+        &__5{
+            order: 5;
+        }
+        &__6{
+            order: 6;
+        }
+        &__7{
+            order: 8;
+        }
+        &__8{
+            order: 7;
+        }
+        &__9{
+            order: 9;
+        }
+        &__10{
+            order: 10;
+        }
+    }
+}
