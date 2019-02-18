@@ -6,11 +6,13 @@
     right: 50px;
     transform: translateY(-50%);
     &__dot{
+        display: block;
         margin-bottom: 20px;
         height: 10px;
         width: 10px;
         border: 1px solid #2a2a2a;
         border-radius: 40px;
+        background: #2a2a2a;
         &:last-child{
             margin-bottom: 0px;
         }
@@ -18,7 +20,7 @@
 }
 
 .highlight{
-    background: #2a2a2a;
+    background: transparent;
 }
 
 @media screen and (max-width: 640px)  {

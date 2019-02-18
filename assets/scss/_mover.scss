@@ -1,0 +1,57 @@
+.mover{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    .mover__part{
+        z-index: 100;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        &:hover{
+            border-color: cadetblue;
+        }
+        &__up{
+            border-top: solid lightgray 2px;
+            border-left: solid lightgray 2px;
+            top: 20px;
+            left: 20px;
+        }
+        &__down{
+            top: 59px;
+            border-bottom: solid lightgray 2px;
+            border-right: solid lightgray 2px;
+            right: 19px;
+        } 
+        &__container{
+            transform: rotate(45deg);
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 80;
+            background: #2a2a2a;
+        }
+    }
+}
+
+.petiteBarre{
+    position: fixed;
+    height: 2px;
+    width: 26px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: lightgray;
+    z-index: 100;
+}
+
+.none{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.block{
+    display: block;
+}

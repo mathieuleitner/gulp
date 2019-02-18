@@ -18,8 +18,7 @@
                 <div class="burger__part"></div>
                 <div class="burger__part"></div>
                 <div class="burger__part"></div>
-            </div>
-            
+            </div>         
         </div>
         <div class="header">
             <div>
@@ -42,6 +41,13 @@
         </div>
     </header>
     <main>
+        <div class="petiteBarre"></div>
+        <div class="mover">
+            <div class="mover__part__container">
+                <div class="mover__part mover__part__up prev"></div>
+                <div class="mover__part mover__part__down next"></div>
+            </div>
+        </div>
         <div class="menu--responsive">
             <a href="">home</a>
             <a href="">about us</a>
@@ -57,10 +63,8 @@
             <a href=""><img src="assets/img/svg/basket.svg" alt=""><span>0</span></a>
         </div>
         <div class="section__container">
-            <section class="section section__1 section__img">
-                <img class="mover" src="assets/img/logo.png" alt="">
-            </section>
-            <section class="section section__2">
+            <section id="section1" class="section section__1 section__img"></section>
+            <section id="section2" class="section section__2">
                 <img src="assets/img/thingy.png" alt="">
                 <h1>We are Bellatrix</h1>
                 <h2>The agency that will make you change the way you sell</h2>
@@ -68,7 +72,7 @@
                     dolore magna aliqua. Ut enim ad.
                 </p>
             </section>
-            <section class="section section__3">
+            <section id="section3" class="section section__3">
                 <img src="assets/img/logothing.png" alt="">
                 <h1>Mimosa apps</h1>
                 <h2>The agency that will make you change the way you sell</h2>
@@ -76,9 +80,9 @@
                     dolore magna aliqua. Ut enim ad.
                 </p>
             </section>
-            <section class="section section__4 section__img"></section>
-            <section class="section section__5 section__img"></section>
-            <section class="section section__6">
+            <section id="section4" class="section section__4 section__img"></section>
+            <section id="section5" class="section section__5 section__img"></section>
+            <section id="section6" class="section section__6">
                 <h1>design projects</h1>
                 <h2>The agency that will make you change the way you sell</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -87,7 +91,7 @@
                 </p>
                 <img class="signature" src="assets/img/signature.png" alt="">
             </section>
-            <section class="section section__7">
+            <section id="section7" class="section section__7">
                 <h1>adhara coffee shop</h1>
                 <h2>The agency that will make you change the way you sell</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -96,9 +100,9 @@
                 </p>
                 <img class="signature" src="assets/img/signature2.png" alt="">
             </section>
-            <section class="section section__8 section__img"></section>
-            <section class="section section__9 section__img"></section>
-            <section class="section section__10">
+            <section id="section8" class="section section__8 section__img"></section>
+            <section id="section9" class="section section__9 section__img"></section>
+            <section id="section10" class="section section__10">
                 <h1>amber liqueur</h1>
                 <h2>The agency that will make you change the way you sell</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -109,13 +113,14 @@
             </section>
         </div>
         <div class="arianne">
-            <div class="arianne__dot arianne__dot__1"></div>
-            <div class="arianne__dot arianne__dot__2"></div>
-            <div class="arianne__dot arianne__dot__3"></div>
-            <div class="arianne__dot arianne__dot__4"></div>
-            <div class="arianne__dot arianne__dot__5"></div>
+            <a href="#section1" class="arianne__dot arianne__dot__1"></a>
+            <a href="#section3" class="arianne__dot arianne__dot__2"></a>
+            <a href="#section5" class="arianne__dot arianne__dot__3"></a>
+            <a href="#section7" class="arianne__dot arianne__dot__4"></a>
+            <a href="#section9" class="arianne__dot arianne__dot__5"></a>
         </div>
     </main>
+    
     <footer>
         <div class="container">
             <div class="footer__up">
@@ -147,7 +152,7 @@
                     <div class="tweet">
                         <img src="assets/img/etiquette.png" alt="">
                         <p>
-                           <a>RT</a> “@astro_reid: Our gorgeous Earth at night under a <a>#fullmoonpic.twitter.com/PSyrUDiZ8x</a>”                                
+                            <a>RT</a> “@astro_reid: Our gorgeous Earth at night under a <a>#fullmoonpic.twitter.com/PSyrUDiZ8x</a>”                                
                         </p>
                     </div>
                     <div class="tweet">
@@ -163,12 +168,17 @@
             <div class="footer__down">Made by Naughty Robot Themes</div>
         </div>
     </footer>
-<script
+    
+    
+    <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-<script src="assets/js/menuResponsive.js"></script>
-<script src="assets/js/arianne.js"></script>
+    <script src="assets/js/lib/jQuery-Plugin-To-Switch-CSS-Classes-On-Scroll-Switch-Styler/dist/jquery.switchstyler.min.js"></script>
+    <script src="assets/js/menuResponsive.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/mover.js"></script>
+    
 </body>
 
 </html>
